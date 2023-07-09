@@ -47,10 +47,7 @@ fetch(URL + productId,{
               <p class="card-text fw-bold text-end">
               ${detail.price}€
               </p>
-              <div>
-              <a href="./back-office.html?id=${detail._id}" class="btn btn-warning">MODIFICA EVENTO</a>
-              <button type="button" class="btn btn-danger">ELIMINA EVENTO</button>
-              </div>
+            
               </div>
               </div>
               `
