@@ -8,7 +8,7 @@ const productId = addressBarContent.get('id')
 console.log('EVENTID', productId)
 
 
-const nameInput = document.getElementById('game-name')
+const nameInput = document.getElementById('gameName')
 const descriptionInput = document.getElementById('game-descrizione')
 const brandInput = document.getElementById('game-brand')
 const imgInput = document.getElementById('game-image')
@@ -36,13 +36,7 @@ if (productId) {
   .then((detail) => {
     console.log('DETAIL', detail)
 
-    const nameInput = document.getElementById('game-name')
-    const descriptionInput = document.getElementById('game-descrizione')
-    const brandInput = document.getElementById('game-brand')
-    const imgInput = document.getElementById('game-image')
-    const priceInput = document.getElementById('game-price') 
-
-    nameInput.value = detail.name
+    nameInput.value = detail.nome
     descriptionInput.value = detail.description
     brandInput.value = detail.brand
     imgInput.value = detail.imageUrl
@@ -71,7 +65,7 @@ gameform.addEventListener('submit', function (e) {
 
     //i loro .value viene impacchettato al oggetto
 const newProduct = {
-    name: nameInput.Value,
+    nome: nameInput.Value,
     description: descriptionInput.value,
     brand: brandInput.value,
     imageUrl: imgInput.value,
